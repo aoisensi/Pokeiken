@@ -7,7 +7,7 @@ public partial class MainWindow
 	private global::Gtk.Alignment GtkAlignment1;
 	private global::Gtk.HBox hbox1;
 	private global::Gtk.SpinButton spinbuttonLv;
-	private global::Gtk.HScrollbar hscrollbarLv;
+	private global::Gtk.HScale hscaleLv;
 	private global::Gtk.Label GtkLabel3;
 	private global::Gtk.Frame frame1;
 	private global::Gtk.Alignment GtkAlignment;
@@ -33,7 +33,6 @@ public partial class MainWindow
 		this.Title = global::Mono.Unix.Catalog.GetString ("Pokeiken");
 		this.TypeHint = ((global::Gdk.WindowTypeHint)(1));
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
-		this.AllowShrink = true;
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.vbox1 = new global::Gtk.VBox ();
 		this.vbox1.Name = "vbox1";
@@ -55,7 +54,7 @@ public partial class MainWindow
 		this.spinbuttonLv = new global::Gtk.SpinButton (1D, 100D, 1D);
 		this.spinbuttonLv.CanFocus = true;
 		this.spinbuttonLv.Name = "spinbuttonLv";
-		this.spinbuttonLv.Adjustment.PageIncrement = 1D;
+		this.spinbuttonLv.Adjustment.PageIncrement = 10D;
 		this.spinbuttonLv.ClimbRate = 1D;
 		this.spinbuttonLv.Numeric = true;
 		this.spinbuttonLv.Value = 1D;
@@ -65,16 +64,20 @@ public partial class MainWindow
 		w1.Expand = false;
 		w1.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.hscrollbarLv = new global::Gtk.HScrollbar (null);
-		this.hscrollbarLv.Name = "hscrollbarLv";
-		this.hscrollbarLv.Adjustment.Lower = 1D;
-		this.hscrollbarLv.Adjustment.Upper = 120D;
-		this.hscrollbarLv.Adjustment.PageIncrement = 10D;
-		this.hscrollbarLv.Adjustment.PageSize = 20D;
-		this.hscrollbarLv.Adjustment.StepIncrement = 10D;
-		this.hscrollbarLv.Adjustment.Value = 1D;
-		this.hbox1.Add (this.hscrollbarLv);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.hscrollbarLv]));
+		this.hscaleLv = new global::Gtk.HScale (null);
+		this.hscaleLv.CanFocus = true;
+		this.hscaleLv.Name = "hscaleLv";
+		this.hscaleLv.Adjustment.Lower = 1D;
+		this.hscaleLv.Adjustment.Upper = 100D;
+		this.hscaleLv.Adjustment.PageIncrement = 10D;
+		this.hscaleLv.Adjustment.StepIncrement = 1D;
+		this.hscaleLv.Adjustment.Value = 1D;
+		this.hscaleLv.DrawValue = false;
+		this.hscaleLv.Digits = 0;
+		this.hscaleLv.ValuePos = ((global::Gtk.PositionType)(2));
+		this.hbox1.Add (this.hscaleLv);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.hscaleLv]));
+		w2.PackType = ((global::Gtk.PackType)(1));
 		w2.Position = 1;
 		this.GtkAlignment1.Add (this.hbox1);
 		this.frame2.Add (this.GtkAlignment1);
@@ -225,12 +228,12 @@ public partial class MainWindow
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 192;
+		this.DefaultWidth = 305;
 		this.DefaultHeight = 184;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.spinbuttonLv.ValueChanged += new global::System.EventHandler (this.OnSpinbuttonLvValueChanged);
-		this.hscrollbarLv.ValueChanged += new global::System.EventHandler (this.OnHscrollbarLvValueChanged);
+		this.hscaleLv.ValueChanged += new global::System.EventHandler (this.OnHscaleLvValueChanged);
 		this.radiobuttonLvType80.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType80Clicked);
 		this.radiobuttonLvType60.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType60Clicked);
 		this.radiobuttonLvType164.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType164Clicked);

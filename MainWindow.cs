@@ -24,16 +24,16 @@ public partial class MainWindow: Gtk.Window
 		Application.Quit ();
 		a.RetVal = true;
 	}
-
-	protected void OnHscrollbarLvValueChanged (object sender, EventArgs e)
+	
+	protected void OnHscaleLvValueChanged (object sender, EventArgs e)
 	{
-		spinbuttonLv.Value = hscrollbarLv.Value;
+		spinbuttonLv.Value = (double)(int)hscaleLv.Value;
 		CalcExp ();
 	}
 
 	protected void OnSpinbuttonLvValueChanged (object sender, EventArgs e)
 	{
-		hscrollbarLv.Value = spinbuttonLv.Value;
+		hscaleLv.Value = spinbuttonLv.Value;
 		CalcExp ();
 	}
 	
@@ -122,4 +122,5 @@ public partial class MainWindow: Gtk.Window
 			ShowExp (lv3 * (32 + (int)(lv * 0.5)) * 0.02);
 		}
 	}
+
 }
