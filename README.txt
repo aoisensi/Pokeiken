@@ -2,6 +2,7 @@ Pokeiken
 
 ポケモンの経験値を計算するツールです
 @hama_mura ← この人に脅されて作りました(嘘です)
+https://twitter.com/hama_mura/status/343654026455433217
 
 1.利用規約
 
