@@ -231,6 +231,11 @@ public partial class MainWindow
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.spinbuttonLv.ValueChanged += new global::System.EventHandler (this.OnSpinbuttonLvValueChanged);
 		this.hscrollbarLv.ValueChanged += new global::System.EventHandler (this.OnHscrollbarLvValueChanged);
-		this.radiobuttonLvType100.GroupChanged += new global::System.EventHandler (this.OnRadiobuttonLvType100GroupChanged);
+		this.radiobuttonLvType80.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType80Clicked);
+		this.radiobuttonLvType60.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType60Clicked);
+		this.radiobuttonLvType164.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType164Clicked);
+		this.radiobuttonLvType125.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType125Clicked);
+		this.radiobuttonLvType105.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType105Clicked);
+		this.radiobuttonLvType100.Clicked += new global::System.EventHandler (this.OnRadiobuttonLvType100Clicked);
 	}
 }

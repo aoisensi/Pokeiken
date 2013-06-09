@@ -118,7 +118,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
-                        <signal name="GroupChanged" handler="OnRadiobuttonLvType100GroupChanged" />
+                        <signal name="Clicked" handler="OnRadiobuttonLvType100Clicked" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>
@@ -142,6 +142,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
+                        <signal name="Clicked" handler="OnRadiobuttonLvType105Clicked" />
                       </widget>
                       <packing>
                         <property name="LeftAttach">1</property>
@@ -165,6 +166,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
+                        <signal name="Clicked" handler="OnRadiobuttonLvType125Clicked" />
                       </widget>
                       <packing>
                         <property name="TopAttach">1</property>
@@ -190,6 +192,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
+                        <signal name="Clicked" handler="OnRadiobuttonLvType164Clicked" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>
@@ -215,6 +218,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
+                        <signal name="Clicked" handler="OnRadiobuttonLvType60Clicked" />
                       </widget>
                       <packing>
                         <property name="AutoSize">True</property>
@@ -236,6 +240,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
+                        <signal name="Clicked" handler="OnRadiobuttonLvType80Clicked" />
                       </widget>
                       <packing>
                         <property name="TopAttach">1</property>
