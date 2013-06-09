@@ -7,13 +7,12 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Pokeiken.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="175 184">
+  <widget class="Gtk.Window" id="MainWindow" design-size="192 184">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Pokeiken</property>
     <property name="TypeHint">Dialog</property>
     <property name="WindowPosition">CenterOnParent</property>
-    <property name="Resizable">False</property>
-    <property name="AllowGrow">False</property>
+    <property name="AllowShrink">True</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="vbox1">
@@ -119,6 +118,7 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
+                        <signal name="GroupChanged" handler="OnRadiobuttonLvType100GroupChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>
@@ -190,7 +190,6 @@
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
                         <property name="Group">groupLvType</property>
-                        <signal name="GroupChanged" handler="OnRadiobuttonLvType164GroupChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>

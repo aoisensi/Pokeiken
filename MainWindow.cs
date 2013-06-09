@@ -25,8 +25,8 @@ public partial class MainWindow: Gtk.Window
 		hscrollbarLv.Value = spinbuttonLv.Value;
 		CalcExp ();
 	}
-
-	protected void OnRadiobuttonLvType164GroupChanged (object sender, EventArgs e)
+	
+	protected void OnRadiobuttonLvType100GroupChanged (object sender, EventArgs e)
 	{
 		CalcExp ();
 	}
@@ -34,6 +34,25 @@ public partial class MainWindow: Gtk.Window
 	protected void CalcExp ()
 	{
 		int lv = (int)spinbuttonLv.Value;
+		if (radiobuttonLvType60.State == StateType.Active) {
 
+		} else if (radiobuttonLvType80.State == StateType.Active) {
+
+		} else if (radiobuttonLvType100.State == StateType.Active) {
+			ShowExp (lv * lv * lv);
+		} else if (radiobuttonLvType105.State == StateType.Active) {
+
+		} else if (radiobuttonLvType125.State == StateType.Active) {
+
+		} else if (radiobuttonLvType164.State == StateType.Active) {
+
+		} else {
+			labelExp.Text = "ごめんなんか不具合出てる";
+		}
+	}
+
+	protected void ShowExp (int exp)
+	{
+		labelExp.Text = string.Format ("{0:#,0}Exp", exp);
 	}
 }

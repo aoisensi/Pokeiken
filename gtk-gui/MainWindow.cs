@@ -33,8 +33,7 @@ public partial class MainWindow
 		this.Title = global::Mono.Unix.Catalog.GetString ("Pokeiken");
 		this.TypeHint = ((global::Gdk.WindowTypeHint)(1));
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
-		this.Resizable = false;
-		this.AllowGrow = false;
+		this.AllowShrink = true;
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.vbox1 = new global::Gtk.VBox ();
 		this.vbox1.Name = "vbox1";
@@ -226,12 +225,12 @@ public partial class MainWindow
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 175;
+		this.DefaultWidth = 192;
 		this.DefaultHeight = 184;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.spinbuttonLv.ValueChanged += new global::System.EventHandler (this.OnSpinbuttonLvValueChanged);
 		this.hscrollbarLv.ValueChanged += new global::System.EventHandler (this.OnHscrollbarLvValueChanged);
-		this.radiobuttonLvType164.GroupChanged += new global::System.EventHandler (this.OnRadiobuttonLvType164GroupChanged);
+		this.radiobuttonLvType100.GroupChanged += new global::System.EventHandler (this.OnRadiobuttonLvType100GroupChanged);
 	}
 }
