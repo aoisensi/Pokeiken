@@ -1,19 +1,18 @@
 Pokeiken
 
 ポケモンの経験値を計算するツールです
-@hama_mura ← この人に脅されて作りました
+@hama_mura ← この人に脅されて作りました(嘘です)
 
 1.利用規約
 
 このソフトを使用した責任について、作者はすべての責任を問われないこととします
 再配布しないでください
-このソフトを教える場合、リポジトリのURL "https://github.com/aoisensi/Pokeiken" にリンクをお願いします
+このソフトを他人に教える場合、リポジトリのURL "https://github.com/aoisensi/Pokeiken" にリンクをお願いします
 このソフトを使用した時点で、上文全てに同意したこととみなします
 
 2.ダウンロード
 
-https://github.com/aoisensi/Pokeiken
-ここの右のTagsタブからどうぞ
+http://bit.ly/pokeiken
 
 
 3.インストール
@@ -54,4 +53,4 @@ aoisensi@aoisensi.info
 
 
 
-ver0.1 2013/06/09 公開
+ver0.1 2013/06/09 公開 
