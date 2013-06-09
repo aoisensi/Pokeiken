@@ -10,13 +10,18 @@ Pokeiken
 このソフトを教える場合、リポジトリのURL "https://github.com/aoisensi/Pokeiken" にリンクをお願いします
 このソフトを使用した時点で、上文全てに同意したこととみなします
 
+2.ダウンロード
 
-2.インストール
+https://github.com/aoisensi/Pokeiken
+ここの右のTagsタブからどうぞ
+
+
+3.インストール
 
 そのままPokeiken.exeを起動してください
 
 
-3.必須環境
+4.必須環境
 
 Mac Linux Windows 多分どれでも起動すると思います
 
@@ -27,7 +32,7 @@ http://www.go-mono.com/mono-downloads/download.html
 それ以外は知りません自分で考えてください
 
 
-4.アンインストール
+5.アンインストール
 
 設定ファイルもレジストリも使用してません
 
