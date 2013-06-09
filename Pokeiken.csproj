@@ -53,4 +53,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="readme.txt" />
+    <None Include="README" />
+  </ItemGroup>
 </Project>
